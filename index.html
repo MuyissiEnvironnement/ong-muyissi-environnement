@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muyissi Environnement</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff; /* Fond blanc */
+            color: #333;
+        }
+        header {
+            background-color: #38477a; /* Couleur bleu foncé */
+            color: #ffffff;
+        }
+        .header-content {
+            background-color: #ffffff; /* Fond blanc pour la partie supérieure */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-content h1 {
+            color: #38477a;
+            margin: 0;
+        }
+        .don-button {
+            background-color: #38477a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #38477a; /* Couleur bleu foncé */
+            color: #ffffff;
+        }
+        .nav-link {
+            color: #ffffff;
+        }
+        .nav-link:hover {
+            color: #d1c4e9; /* Une couleur plus claire pour l'effet hover */
+        }
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        .partners-carousel, .members-carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+        .partners-carousel img, .members-carousel img {
+            height: 100px;
+            width: auto;
+            border-radius: 10px;
+        }
+        .main-banner {
+            width: 100%;
+            height: 300px;
+            background-image: url('https://via.placeholder.com/1200x300');
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="C:\Users\Pierre\Downloads\code\logo-muyissi.png.jpg" style="width: 150px;" class="mb-3">
+            <h1 class="display-4">Muyissi Environnement</h1>
+            <a href="#faire-un-don" class="don-button">Faire un Don</a>
+        </div>
+        <nav style="background-color: #38477a; color: #ffffff;">
+            <ul class="nav justify-content-center mt-3">
+                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#thematiques">Thématiques</a></li>
+                <li class="nav-item"><a class="nav-link" href="#actualite">Actualité</a></li>
+                <li class="nav-item"><a class="nav-link" href="#agir">Agir</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container mt-3 text-end d-flex justify-content-end align-items-center">
+            <button class="btn btn-link" onclick="searchSite()">
+                <i class="fas fa-search"></i> <!-- Logo de loupe pour recherche -->
+            </button>
+        </div>
+    </header>
+
+    <div class="main-banner">
+<img src="C:\Users\Pierre\Downloads\code\342559210_670729624861973_872966249231523814_n.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center; display: block;">
+
+</div> <!-- Grande photo ajustée sous les rubriques -->
+
+    <main class="container my-5" style="margin-top: 40px;">
+        <section id="intro" class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-primary">À propos de Muyissi Environnement</h2>
+                <p>Muyissi Environnement est une organisation non gouvernementale engagée dans la protection de l'environnement et le développement durable. Nous travaillons activement pour préserver les ressources naturelles et améliorer la qualité de vie des communautés locales.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="C:\Users\Pierre\Downloads\code\Affiche événement pot de départ entreprise simple orange.png" class="img-fluid rounded">
+            </div>
+        </section>
+
+        <section id="membres" class="my-5">
+            <h2 class="text-secondary">Nos Membres</h2>
+            <p>Découvrez quelques-uns des visages derrière Muyissi Environnement :</p>
+            <div class="members-carousel">
+                <img src="C:\Users\Pierre\Downloads\code\377556138_6741948999198341_11775585649863610_n.jpg">
+                <img src="C:\Users\Pierre\Downloads\code\Ladislas Désiré NDEMBET (1).png">
+                <img src="C:\Users\Pierre\Downloads\code\WhatsApp Image 2024-10-21 à 11.44.21_61450672.jpg">
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-4">
+        <p>&copy; 2024 Muyissi Environnement. Tous droits réservés.</p>
+        <p>Contact : muyissienvironnement2008@gmail.com</p>
+        <p>Téléphone : +241 077 87 37 85</p>
+        <p>Adresse : B.P. 2032 Mouila</p>
+        <div class="social-icons mt-3">
+            <a href="https://www.instagram.com/muyissi_environnement?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/muyissi-environnement-258a9b114/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/OngMuyissi" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100089118440856" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <h5 class="mt-4">Nos Partenaires</h5>
+        <div class="partners-carousel">
+            <img src="https://via.placeholder.com/150" alt="Partenaire 1">
+            <img src="https://via.placeholder.com/150" alt="Partenaire 2">
+            <img src="https://via.placeholder.com/150" alt="Partenaire 3">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+        function searchSite() {
+            const query = document.getElementById("search").value.toLowerCase();
+            if (query) {
+                alert(Résultats de la recherche pour: "${query}"); // Vous pouvez remplacer ceci par un système de recherche fonctionnel.
+            }
+        }
+    </script>
+</body>
+</html> 
