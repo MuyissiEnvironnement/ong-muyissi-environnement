@@ -54,16 +54,16 @@
             margin: 0 10px;
             font-size: 1.5em;
         }
-        .partners-carousel, .members-carousel {
+        .partners-carousel {
             display: flex;
-            overflow-x: auto;
+            justify-content: center;
             gap: 20px;
             padding: 20px;
-            scroll-behavior: smooth;
+            background-color: #ffffff; /* Fond blanc pour mieux voir les logos */
         }
-        .partners-carousel img, .members-carousel img {
-            height: 100px;
-            width: auto;
+        .partners-carousel img {
+            height: 80px;
+            width: 80px;
             border-radius: 10px;
         }
         .main-banner {
@@ -101,9 +101,8 @@
     </header>
 
     <div class="main-banner">
-<img src="https://github.dev/MuyissiEnvironnement/ong-muyissi-environnement/blob/4e63342beba70d42b77eaf17a06d2b22eb0717bf/342559210_670729624861973_872966249231523814_n.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center; display: block;">
-
-</div> <!-- Grande photo ajustée sous les rubriques -->
+        <img src="C:\Users\Pierre\Downloads\code\342559210_670729624861973_872966249231523814_n.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center; display: block;">
+    </div> <!-- Grande photo ajustée sous les rubriques -->
 
     <main class="container my-5" style="margin-top: 40px;">
         <section id="intro" class="row align-items-center">
@@ -112,17 +111,7 @@
                 <p>Muyissi Environnement est une organisation non gouvernementale engagée dans la protection de l'environnement et le développement durable. Nous travaillons activement pour préserver les ressources naturelles et améliorer la qualité de vie des communautés locales.</p>
             </div>
             <div class="col-md-6">
-                <img src="https://github.dev/MuyissiEnvironnement/muyissi-environnement/blob/main/Affiche%20%C3%A9v%C3%A9nement%20pot%20de%20d%C3%A9part%20entreprise%20simple%20orange.png" class="img-fluid rounded">
-            </div>
-        </section>
-
-        <section id="membres" class="my-5">
-            <h2 class="text-secondary">Nos Membres</h2>
-            <p>Découvrez quelques-uns des visages derrière Muyissi Environnement :</p>
-            <div class="members-carousel">
-                <img src="377556138_6741948999198341_11775585649863610_n.jpg">
-                <img src="Ladislas Désiré NDEMBET (1).png">
-                <img src="WhatsApp Image 2024-10-21 à 11.44.21_61450672.jpg">
+                <img src="C:\Users\Pierre\Downloads\code\Affiche événement pot de départ entreprise simple orange.png" class="img-fluid rounded">
             </div>
         </section>
     </main>
@@ -138,11 +127,14 @@
             <a href="https://x.com/OngMuyissi" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100089118440856" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
-        <h5 class="mt-4">Nos Partenaires</h5>
+        <h5 class="mt-5">Nos Partenaires</h5>
         <div class="partners-carousel">
-            <img src="https://via.placeholder.com/150" alt="Partenaire 1">
-            <img src="https://via.placeholder.com/150" alt="Partenaire 2">
-            <img src="https://via.placeholder.com/150" alt="Partenaire 3">
+            <img src="C:\Users\Pierre\Downloads\code\cropped-logo_botf_blanc.png">
+            <img src="C:\Users\Pierre\Downloads\code\ABN-logo_200x200.gif">
+            <img src="C:\Users\Pierre\Downloads\code\thumbnail.jpg">
+            <img src="C:\Users\Pierre\Downloads\code\rri-logo-full-color_1654x2182_acf_cropped-150x198.png">
+            <img src="C:\Users\Pierre\Downloads\code\AEF_Logo.png">
+
         </div>
     </footer>
 
@@ -150,11 +142,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     <script>
         function searchSite() {
-            const query = document.getElementById("search").value.toLowerCase();
+            const query = prompt("Entrez votre recherche :").toLowerCase();
             if (query) {
-                alert(Résultats de la recherche pour: "${query}"); // Vous pouvez remplacer ceci par un système de recherche fonctionnel.
+                alert(`Résultats de la recherche pour: "${query}"`);
             }
         }
     </script>
 </body>
-</html> 
+</html>
